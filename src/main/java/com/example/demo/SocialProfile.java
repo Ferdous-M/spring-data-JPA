@@ -18,7 +18,7 @@ public class SocialProfile {
 
 
     @OneToOne
-    //@JoinColumn(name = "social_user")
+    @JoinColumn(name = "social_user")
     //@JsonIgnore
     private SocialUser user;
 }
