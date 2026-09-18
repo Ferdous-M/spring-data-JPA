@@ -15,4 +15,10 @@ public class SocialProfile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+
+    @OneToOne
+    //@JoinColumn(name = "social_user")
+    //@JsonIgnore
+    private SocialUser user;
 }
