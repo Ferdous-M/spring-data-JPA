@@ -17,8 +17,8 @@ public class SocialProfile {
     private Long id;
 
 
-    @OneToOne
-    @JoinColumn(name = "social_user")
+    @OneToOne(mappedBy = "socialProfile")
+    //@JoinColumn(name = "social_user")
     //@JsonIgnore
     private SocialUser user;
 }
